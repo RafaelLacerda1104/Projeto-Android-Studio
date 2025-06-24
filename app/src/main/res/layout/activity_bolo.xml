@@ -28,7 +28,7 @@
             />
 
         <ImageView
-            android:id="@+id/icone_sair"
+            android:id="@+id/icone_bolo_sair"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_weight="5"
@@ -64,67 +64,30 @@
                 />
 
             <ImageView
-                android:layout_width="210dp"
-                android:layout_height="150dp"
+                android:layout_width="180dp"
+                android:layout_height="110dp"
                 android:src="@drawable/bolo"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:paddingBottom="16dp"
                 />
-
-            <Button
-                android:id="@+id/btn_bolo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ver Receita"
-                android:backgroundTint="#967CFE"
-                android:textColor="@color/white"
-                android:paddingHorizontal="24dp"
-                />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pudim"
+                android:text="INGREDIENTES:\n\n- 3 ovos\n- 1 xícara de leite\n- 1 xícara de óleo\n- 2 xícaras de farinha\n- 1 xícara de açúcar\n- 1/2 xícara de chocolate em pó\n- 1 colher (sopa) de fermento\n\nMODO DE PREPARO:\n\n1. Misture os líquidos.\n2. Adicione os secos peneirados.\n3. Asse por 40min em forno a 180°C."
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="8dp"
                 android:gravity="center"
-                android:padding="16dp"
                 />
 
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                android:src="@drawable/pudim"
-                android:layout_gravity="center"
-                android:adjustViewBounds="true"
-                android:paddingBottom="16dp"
-                />
 
             <Button
-                android:id="@+id/btn_pudim"
+                android:id="@+id/btn_bolo_voltar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ver Receita"
+                android:text="Voltar"
                 android:backgroundTint="#967CFE"
                 android:textColor="@color/white"
                 android:paddingHorizontal="24dp"
@@ -133,6 +96,5 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 
 </LinearLayout>

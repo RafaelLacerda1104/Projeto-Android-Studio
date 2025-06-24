@@ -28,7 +28,7 @@
             />
 
         <ImageView
-            android:id="@+id/icone_sair"
+            android:id="@+id/icone_pudim_sair"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_weight="5"
@@ -56,75 +56,37 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bolo de Chocolate"
+                android:text="Pudim"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="28sp"
                 android:gravity="center"
-                android:padding="16dp"
                 />
 
             <ImageView
-                android:layout_width="210dp"
-                android:layout_height="150dp"
-                android:src="@drawable/bolo"
+                android:layout_width="180dp"
+                android:layout_height="110dp"
+                android:src="@drawable/pudim"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:paddingBottom="16dp"
                 />
-
-            <Button
-                android:id="@+id/btn_bolo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ver Receita"
-                android:backgroundTint="#967CFE"
-                android:textColor="@color/white"
-                android:paddingHorizontal="24dp"
-                />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pudim"
+                android:text="INGREDIENTES:\n\n- 1 lata de leite condensado\n- 2 latas de leite (medida da lata de leite condensado)\n- 3 ovos\n- 1 xícara de açúcar para a calda\n\n MODO DE PREPARO:\n\n1. Derreta o açúcar em fogo baixo até formar calda dourada.\n2. Forre uma forma com a calda.\n3. Bata no liquidificador: leite condensado, leite e ovos.\n4. Despeje na forma caramelizada.\n5. Asse em banho-maria por 45min (180°C).\n6. Deixe esfriar e desenforme."
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="8dp"
                 android:gravity="center"
-                android:padding="16dp"
                 />
 
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                android:src="@drawable/pudim"
-                android:layout_gravity="center"
-                android:adjustViewBounds="true"
-                android:paddingBottom="16dp"
-                />
 
             <Button
-                android:id="@+id/btn_pudim"
+                android:id="@+id/btn_pudim_voltar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ver Receita"
+                android:text="Voltar"
                 android:backgroundTint="#967CFE"
                 android:textColor="@color/white"
                 android:paddingHorizontal="24dp"
@@ -133,6 +95,5 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 
 </LinearLayout>
