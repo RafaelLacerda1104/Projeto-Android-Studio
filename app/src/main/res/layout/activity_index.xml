@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndexActivity"
+    android:background="@drawable/kitchenware_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#967CFE">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Receitas"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:paddingLeft="70dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/icone_sair"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_logout_24"
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bolo de Chocolate"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    />
+
+                <ImageView
+                    android:layout_width="210dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bolo"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="16dp"
+                    />
+
+            <Button
+                android:id="@+id/btn_bolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Receita"
+                android:backgroundTint="#967CFE"
+                android:textColor="@color/white"
+                android:paddingHorizontal="24dp"
+                />
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pudim"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:padding="16dp"
+                />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pudim"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:paddingBottom="16dp"
+                />
+
+            <Button
+                android:id="@+id/btn_pudim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Receita"
+                android:backgroundTint="#967CFE"
+                android:textColor="@color/white"
+                android:paddingHorizontal="24dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

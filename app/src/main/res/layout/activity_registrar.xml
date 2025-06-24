@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#967CFE"
+    android:orientation="vertical"
+    tools:context=".RegistrarActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/cadastro"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edit_email_registrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint="Insira seu email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edit_senha_registrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:hint="Insira uma senha"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edit_confirmarSenha_registrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:hint="Confirme a senha"
+            android:inputType="textPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cadastrar_registrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Criar conta"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

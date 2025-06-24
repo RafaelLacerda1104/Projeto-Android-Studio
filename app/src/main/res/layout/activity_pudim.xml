@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndexActivity"
+    android:background="@drawable/kitchenware_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#967CFE">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Receitas"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:paddingLeft="70dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/icone_pudim_sair"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_logout_24"
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pudim"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="110dp"
+                android:src="@drawable/pudim"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTES:\n\n- 1 lata de leite condensado\n- 2 latas de leite (medida da lata de leite condensado)\n- 3 ovos\n- 1 xícara de açúcar para a calda\n\n MODO DE PREPARO:\n\n1. Derreta o açúcar em fogo baixo até formar calda dourada.\n2. Forre uma forma com a calda.\n3. Bata no liquidificador: leite condensado, leite e ovos.\n4. Despeje na forma caramelizada.\n5. Asse em banho-maria por 45min (180°C).\n6. Deixe esfriar e desenforme."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="8dp"
+                android:gravity="center"
+                />
+
+
+            <Button
+                android:id="@+id/btn_pudim_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                android:backgroundTint="#967CFE"
+                android:textColor="@color/white"
+                android:paddingHorizontal="24dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
