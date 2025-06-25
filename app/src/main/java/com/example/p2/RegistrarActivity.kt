@@ -41,6 +41,10 @@ class RegistrarActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
             return
         }
+        else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            binding.editEmailRegistrar.error = "Digite um e-mail válido"
+            return
+        }
         else if (confirmarSenha != senha) {
             Toast.makeText(this, "As senhas digitadas são diferentes.", Toast.LENGTH_SHORT).show()
             return
