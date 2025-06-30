@@ -53,7 +53,7 @@
             android:src="@drawable/baseline_add_24"
             app:tint="@color/white"
             android:backgroundTint="@color/Purple"
-            \>
+            />
 
     </RelativeLayout>
 
