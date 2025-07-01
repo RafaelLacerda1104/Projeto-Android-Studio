@@ -10,12 +10,52 @@
     tools:context=".PaginaAddActivity">
 
     <TextView
+        android:id="@+id/nota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
         android:text="Nova Receita"
         android:textColor="@color/Purple"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/btn_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/nota"
+        android:layout_marginEnd="6dp"
+        />
+    
+    <EditText
+        android:id="@+id/titulo_add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Título"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/nota"
+        android:background="@drawable/borda_roxa"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"
+        />
+
+    <EditText
+        android:id="@+id/receita_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Insira sua receita"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/borda_roxa"
+        android:layout_below="@id/titulo_add"
+        android:layout_marginTop="12dp"
+        />
 
 </RelativeLayout>
