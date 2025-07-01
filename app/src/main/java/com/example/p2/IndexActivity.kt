@@ -20,6 +20,7 @@ class IndexActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         binding.iconeSair.setOnClickListener(this)
+        binding.btnAdd.setOnClickListener(this)
 
     }
 
@@ -27,11 +28,18 @@ class IndexActivity : AppCompatActivity(), View.OnClickListener {
         if(view.id == R.id.icone_sair) {
             btSair()
         }
+        else if(view.id == R.id.btn_add) {
+            btAdd()
+        }
     }
 
     fun btSair() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
+    }
+
+    fun btAdd() {
+        startActivity(Intent(this, PaginaAddActivity::class.java))
     }
 
 }
