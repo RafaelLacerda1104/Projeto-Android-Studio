@@ -14,10 +14,10 @@ class PaginaAddActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityPaginaAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        }
+    }
 
     override fun onClick(view: View) {
         TODO("Not yet implemented")
     }
-}
+
 }
